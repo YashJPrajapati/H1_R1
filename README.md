@@ -51,7 +51,8 @@ PolyStrive AI is a comprehensive multilingual document understanding assistant d
 - **Email**: SMTP with template support
 
 ## Architecture
-<pre> ### System Architecture 
+### System Architecture 
+<pre> 
   ```mermaid graph TD A[Frontend (Next.js)] --> B[API Gateway] B --> C[Django Backend] C --> D[PostgreSQL DB] D --> E[Redis Cache] E --> F[Celery Workers] 
   ``` 
 </pre>
