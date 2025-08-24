@@ -52,16 +52,7 @@ PolyStrive AI is a comprehensive multilingual document understanding assistant d
 
 ## Architecture
 
-### System Architecture
-\`\`\`
-Frontend (Next.js) ←→ API Gateway ←→ Django Backend
-                                        ↓
-                                   PostgreSQL DB
-                                        ↓
-                                   Redis Cache
-                                        ↓
-                                   Celery Workers
-\`\`\`
+<pre> ### System Architecture ```mermaid graph TD A[Frontend (Next.js)] --> B[API Gateway] B --> C[Django Backend] C --> D[PostgreSQL DB] C --> E[Redis Cache] C --> F[Celery Workers] ``` </pre>
 
 ### Key Design Decisions
 1. **Microservices Approach**: Separated concerns into distinct apps (auth, processing, analytics)
